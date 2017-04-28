@@ -19,7 +19,7 @@
 	
     $("#portfolio").click(function() {
         $("html, body").animate({
-            scrollTop: $("section_portfolio").offset().top
+            scrollTop: $(".section_portfolio").offset().top
         }, 1e3)
     });
 
