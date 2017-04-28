@@ -1,0 +1,29 @@
+/* ------------------------------------------------------------ *\
+	Contact
+\* ------------------------------------------------------------ */
+
+.contacts ul {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 50px;
+	text-align: center;
+	align-items: center;
+	color: #2A2A2A;
+
+	& li {
+		display: flex;
+		align-items: center;
+	}
+
+	& .contact__image {
+		margin-right: 23px;
+	}
+
+	& a {
+		color: inherit
+	}
+
+	& a:hover {
+		color: $gold;
+	}
+}

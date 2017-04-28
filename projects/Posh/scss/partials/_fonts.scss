@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+	Fonts
+\* ------------------------------------------------------------ */
+
+@font-face {
+	font-family: 'Butler';
+	src: url('../../css/fonts/Butler.eot');
+	src: url('../../css/fonts/Butler.eot?#iefix') format('embedded-opentype'),
+		url('../../css/fonts/Butler.woff') format('woff'),
+		url('../../css/fonts/Butler.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Butler';
+	src: url('../../css/fonts/Butler-Medium.eot');
+	src: url('../../css/fonts/Butler-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../../css/fonts/Butler-Medium.woff') format('woff'),
+		url('../../css/fonts/Butler-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Butler';
+	src: url('../../css/fonts/Butler-Light.eot');
+	src: url('../../css/fonts/Butler-Light.eot?#iefix') format('embedded-opentype'),
+		url('../../css/fonts/Butler-Light.woff') format('woff'),
+		url('../../css/fonts/Butler-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}

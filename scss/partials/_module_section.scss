@@ -1,0 +1,43 @@
+/* ------------------------------------------------------------ *\
+	Section
+\* ------------------------------------------------------------ */
+
+.section {
+	position: relative;
+	padding: 30px 0;
+
+	& .section__head{ 
+		text-align: center;
+		padding: 10px 0 30px;
+		}
+
+	h3 {
+		position: relative;
+		&:after{
+			content: '';
+			background-image: url(images/wave.png);
+			width: 62px;
+			height: 14px;
+			position: absolute;
+			bottom: -10px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	& .section__body {
+		text-align: center;
+	}
+
+	.section__entry {
+		padding: 0 90px 30px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.section{
+		& .section__entry {
+			padding: 0 20px 15px;
+		}
+	}
+}

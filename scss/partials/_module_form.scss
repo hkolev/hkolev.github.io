@@ -1,0 +1,42 @@
+/* ------------------------------------------------------------ *\
+	Form
+\* ------------------------------------------------------------ */
+
+.form {
+	background: #F1F1F1;
+	padding: 40px 20px 10px;
+
+	& .form__row {
+		width: 250px;
+	}
+
+	& .form__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.form {
+		padding: 40px 120px 10px;
+
+		& .form__inner {
+			justify-content: space-around;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+	.form {
+		padding: 40px 20px 10px;
+		
+		& .form__inner {
+			flex-direction: column;
+		}
+
+		.form__row {
+			width: 100%;
+		}
+	}
+}

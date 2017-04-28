@@ -1,0 +1,44 @@
+/* ------------------------------------------------------------ *\
+	Slider
+\* ------------------------------------------------------------ */
+
+.slider_testimonials {
+	position: relative;
+	bottom: 60px;
+	color: $black;
+	
+	& .slide{
+		padding: 0 100px;
+	}
+
+	& .slider__actions {
+		font-size: 40px;
+		color: $white;
+	}
+
+	& .slider__prev,
+	 & .slider__next {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		color: inherit;
+		z-index: 999;
+
+		&:hover {
+			color: $gray;
+		}
+	}
+
+	& .slider__prev {
+		left: 0;
+	}
+
+	& .slider__next {
+		right: 0;
+	}
+
+	& .owl-dots {
+		display: none;
+	}
+}
+

@@ -1,0 +1,41 @@
+/* ------------------------------------------------------------ *\
+	Mobile
+\* ------------------------------------------------------------ */
+
+@media (max-width: 1023px) {
+	body {
+		font-size: 18px;
+	}
+
+	.features{ 
+		& .feature {
+			flex: 0 1 50%;
+		}
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.features { 
+		flex-direction: column;
+
+		& .feature {
+			flex: 0 1 100%;
+		}
+	}
+
+	.feature {
+		
+		& .feature__inner{
+			max-height: 300px;
+			max-width: 100%;
+			overflow: hidden
+		}
+
+		& img {
+			width: 100%;
+		}
+	}
+
+}

@@ -1,0 +1,61 @@
+/* ------------------------------------------------------------ *\
+	Activity
+\* ------------------------------------------------------------ */
+
+.activities {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 -10px;
+
+	& .activity {
+		flex: 0 1 33.33%;
+	}
+
+	& .activity_lead {
+		flex: 1 1 60%;
+	}
+}
+
+.activity {
+	position: relative;
+	margin-bottom: 20px;
+	text-align: center;
+
+	& h3 {
+		color: #fff;
+	}
+
+	& a:hover {
+		opacity: .8;
+	}
+
+	& .activity__overlay {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	& .activity__inner {
+		padding: 0 10px;
+		max-height: 100%;
+		overflow: hidden;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.activities {
+		flex-direction: column;
+	}
+
+	.activity {
+		height: 120px;
+		margin-bottom: 10px;
+		overflow: hidden;
+		
+		& img {
+			width: 100%;
+		}
+	}
+}

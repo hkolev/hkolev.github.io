@@ -1,0 +1,38 @@
+/* ------------------------------------------------------------ *\
+	Form
+\* ------------------------------------------------------------ */
+
+.form{
+	font-family: 'Roboto', sans-serif;
+
+	& .form__head{ 
+		margin-bottom: 30px;
+	}
+
+	& h4 {
+		font-weight: 300;
+	}
+
+	& .form__body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	& .form__row {
+		margin-right: 10px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.form {
+		& .form__body {
+			flex-direction: column;
+			padding: 0 10px;
+		}
+
+		& .form__row {
+			margin: 0 0 10px;
+		}
+	}
+}

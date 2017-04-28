@@ -1,0 +1,22 @@
+/* ------------------------------------------------------------ *\
+	Navigations
+\* ------------------------------------------------------------ */
+
+.nav-access {
+    font-family: 'Montserrat', sans-serif;	
+	color: $white;
+	font-weight: bold;
+
+	& ul { 
+		display: flex;
+		align-items: center;
+	}
+
+	& li {
+		margin-left: 17px;
+	}
+
+	& a { 
+		color: inherit;
+	}
+}

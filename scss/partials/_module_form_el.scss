@@ -1,0 +1,31 @@
+/* ------------------------------------------------------------ *\
+	Form elements
+\* ------------------------------------------------------------ */
+
+::-webkit-input-placeholder { text-transform: uppercase; }
+
+.field { 
+	width: 100%;
+	background-color: $white;
+	border: 0;
+	height: 35px;
+	padding: 5px 10px;
+	margin-bottom: 21px;
+	font-family: inherit;
+	outline: 0;
+	border-bottom: 2px solid transparent;
+	transition: ease-in-out .3s;
+	box-sizing: border-box;
+}
+
+.field:focus { border-color: $red; }
+
+.textarea {
+	min-width: 230px;
+	height: 100px;
+	height: 90px;
+	padding: 5px 5px 5px 10px;
+	resize: none;
+	margin-bottom: 4px;
+}
+

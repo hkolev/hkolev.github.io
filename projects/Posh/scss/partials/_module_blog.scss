@@ -1,0 +1,32 @@
+/* ------------------------------------------------------------ *\
+	Blog
+\* ------------------------------------------------------------ */
+
+.blog {
+	& .blog__actions{
+		text-align: center;
+	}
+
+	& .blog_nav {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 60px;
+		color: #3A3A3A;
+	
+		& ul{
+			display: flex;
+		}
+
+		& li {
+			margin-right: 40px;
+		}
+
+		& a {
+			color: inherit;
+		}
+
+		& a:hover {
+			color: $gold;
+		}
+	}
+}

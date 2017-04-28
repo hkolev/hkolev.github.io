@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+	Sprite
+\* ------------------------------------------------------------ */
+
+[class^="ico-"] {
+	background-image: url(images/sprite.png);
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ico-tv {
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+}
+
+.ico-drink {
+	background-position: -25px 0;
+	width: 16px;
+	height: 17px;
+}
+
+.ico-science {
+	background-position: -51px -4px;
+	width: 13px;
+	height: 16px;
+}
+
+.ico-plane {
+	background-position: -70px -4px;
+	width: 17px;
+	height: 16px;
+}

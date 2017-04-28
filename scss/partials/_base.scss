@@ -1,0 +1,60 @@
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+body { 
+	font-family: $font-family;
+	font-size: $font-size;
+	line-height: $line-height;
+	min-width: 320px;
+	color: $gray;
+}
+
+
+a { color: $color-link; text-decoration: none; transition: ease-in-out .3s; }
+a:hover { color: $color-link-hover; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Dosis', sans-serif;
+	margin-bottom: ($line-height / 2) + em;
+	text-transform: uppercase; 
+	font-weight: 300;
+}
+
+img { 
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+h1[class],
+h2[class],
+h3[class],
+h4[class],
+h5[class],
+h6[class],
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+ul:last-child,
+ol:last-child,
+dl:last-child,
+table:last-child,
+blockquote:last-child { margin-bottom: 0; }
+
+h1 { font-size: 60px; color: #777; }
+h2 { font-size: 42px; }
+h3 { font-size: 34px; color: #8A8484; }
+h4 { color: #777; font-size: 28px; line-height: 1; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; text-transform: capitalize; }

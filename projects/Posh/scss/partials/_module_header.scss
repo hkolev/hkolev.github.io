@@ -1,0 +1,55 @@
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header { 
+	position: absolute; 
+	width: 100%;
+	z-index: 2;
+
+	& .header__bar {
+		padding: 15px 0;
+		border-bottom: 1px solid $gray;
+	}
+
+	& .nav-utilities {
+		float: left;
+	}
+
+	& .nav-utilities a {
+		color: $white;
+	}
+
+	& .nav-utilities a:hover {
+		color: $gold;
+	}
+
+	& .socials a { 
+		color: $white;
+	}
+
+	& .socials a:hover { 
+		color: $gold;
+	}
+
+	& .socials { 
+		float: right;
+	}
+
+	& .header__body {
+		padding: 30px 0;
+	}
+
+	& .logo {
+		float: left;
+	}
+
+	& .nav { 
+		float: right; 
+		margin-top: 20px;
+	}
+
+	& .nav a {
+		color: $white;
+	}
+}

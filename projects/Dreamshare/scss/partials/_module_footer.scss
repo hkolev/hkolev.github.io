@@ -1,0 +1,44 @@
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+
+.footer {
+	border-top: 3px solid $red;
+	padding: 30px 0;
+	color: #666666;
+	font-family: 'Roboto', sans-serif;
+
+	& a {
+		color: inherit;
+
+		&:hover {
+			color: $red;
+		}
+	}
+
+	& h5 {
+		margin-bottom: 12px;
+	}
+
+	& .footer__nav{
+		
+		& li {
+			margin-bottom: 8px;
+		}
+	}
+
+	& .copyrights {
+		text-align: right;
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+	.footer {
+		text-align: center;
+	
+		& .copyrights {
+			text-align: center;
+		}
+	}
+}

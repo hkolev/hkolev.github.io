@@ -1,0 +1,33 @@
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	padding: 38px 0;
+	& .logo {
+		float: left;
+	}
+
+	& .nav-access {
+		float: right;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.header {
+
+		& .logo {
+			display: none;
+		}
+
+		& .nav-access {
+			float: none;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

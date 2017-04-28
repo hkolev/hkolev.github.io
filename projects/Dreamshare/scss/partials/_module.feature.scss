@@ -1,0 +1,63 @@
+/* ------------------------------------------------------------ *\
+	Features
+\* ------------------------------------------------------------ */
+
+.features {
+	display: flex;
+	margin: 0 -10px;
+
+	& .feature {
+		flex: 1 1 33.33%;
+	}
+}
+
+.feature {
+	position: relative;
+	margin: 0 10px;
+
+	& h2 {
+		color: $white;
+		margin-bottom: 12px;
+	}
+
+	& img {
+		border-radius: 5px;
+	}
+
+	& .feature__content {
+		position: absolute;
+		bottom: 18px;
+		padding: 0 15px;
+	}
+
+	& a:not(.btn) {
+		color: $white;
+		
+		&:hover {
+			color: $red;
+		}
+	}
+
+	& .btn {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.features {
+		flex-direction: column;
+		& .feature {
+			flex: 1 1 100%;
+		}
+	
+	}
+
+	.feature {
+		margin-bottom: 10px;
+		
+		& img {
+			width: 100%;
+			height: 240px;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+/* ------------------------------------------------------------ *\
+	Section
+\* ------------------------------------------------------------ */
+
+.section {
+	& .section__head {
+		padding: 50px 0 70px;
+		text-align: center;
+	}
+
+	& .section__body {
+		padding-bottom: 60px;
+	}
+
+	& .section__foot {
+		padding-bottom: 100px;
+	}
+}
+
+.section_solid{
+	background: #FBFCF5;
+	
+	& .section__head {
+		padding: 60px 0 30px;
+	}
+}
+
+.section_background {
+	position: relative;
+	height: 800px;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	& .section__overlay{
+		display: flex;
+		height: 800px;
+		justify-content: center;
+		& .slider {
+			align-self: flex-end;
+		}
+	}
+}

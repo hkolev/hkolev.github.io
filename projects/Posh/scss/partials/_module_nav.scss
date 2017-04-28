@@ -1,0 +1,28 @@
+/* ------------------------------------------------------------ *\
+	Navigations
+\* ------------------------------------------------------------ */
+
+.nav-utilities li { float: left; margin-right: 20px; }
+
+
+.nav { 
+	text-transform: uppercase; 
+	font-weight: 500; 
+
+	& ul:after {
+		 @extend .clearfix;
+	}
+
+	& li {
+		float: left;
+		margin-right: 25px;
+	}
+
+	& a { 
+		color: inherit;
+	}
+
+	& a:hover {
+		color: $gold;
+	}
+}
