@@ -83,6 +83,14 @@
 
 .nav-trigger.active span:nth-child(3) { transform: rotate(-45deg); }
 
+@media only screen and (max-width: 1023px) {
+	.nav {
+		a {
+			color: $red;
+		}
+	}
+}
+
 
 @media only screen and (max-width: 767px) {
 	.nav {

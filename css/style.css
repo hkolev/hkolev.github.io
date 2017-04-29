@@ -516,6 +516,12 @@ h6 {
           transform: rotate(-45deg);
 }
 
+@media only screen and (max-width: 1023px) {
+  .nav a {
+    color: #f73b56;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .nav {
     font-size: 18px;
