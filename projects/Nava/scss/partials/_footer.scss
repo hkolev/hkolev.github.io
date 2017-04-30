@@ -1,0 +1,42 @@
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+
+.footer {
+	color: #fff;
+	background: #404040;
+	padding: 45px 0;
+	font-size: 14px;
+
+	& a {
+		color: inherit;
+
+		&:hover {
+			color: $red;
+		}
+	}
+
+	& h6 {
+		margin-bottom: 20px;
+	}
+
+	& .footer__nav li {
+		margin-bottom: 11px;
+	}
+
+	& .field {
+		width: 230px;
+	}
+
+	.form {
+		margin-bottom: 30px;
+	}
+
+	.socials {
+		& a {
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+}

@@ -1,0 +1,678 @@
+/* ------------------------------------------------------------ *    Imports
+\* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ *	Reset
+\* ------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------ *	Helpers
+\* ------------------------------------------------------------ */
+.clearfix, .cols:after, .shell:after {
+  content: '';
+  display: table;
+  line-height: 0;
+  clear: both;
+}
+
+.cols {
+  margin: 0 -15px;
+}
+
+.col {
+  float: left;
+}
+
+.col_1of2 {
+  width: 50%;
+}
+
+.col_2of3 {
+  width: 60%;
+}
+
+.col_1of3 {
+  width: 33.33%;
+}
+
+.col_1of4 {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.col_size1 {
+  width: 34%;
+  padding: 0 15px;
+}
+
+.col_size2 {
+  width: 22%;
+  padding: 0 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .col {
+    float: none;
+  }
+  .col_1of4 {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------------------------ *    Variables
+\* ------------------------------------------------------------ */
+/*  Colors  */
+/*  Base body  */
+/*  Links  */
+/*  Shell  */
+/* ------------------------------------------------------------ *	Sprite
+\* ------------------------------------------------------------ */
+[class^="ico-"] {
+  background-image: url(images/sprite.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ------------------------------------------------------------ *	Base
+\* ------------------------------------------------------------ */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  min-width: 320px;
+  color: #000;
+}
+
+a {
+  color: #e7434e;
+  text-decoration: none;
+  transition: ease-in-out .3s;
+}
+
+a:hover {
+  color: rgba(231, 67, 78, 0.7);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.7em;
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h1[class],
+h2[class],
+h3[class],
+h4[class],
+h5[class],
+h6[class],
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+ul:last-child,
+ol:last-child,
+dl:last-child,
+table:last-child,
+blockquote:last-child {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 72px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #343435;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------ *	Shell
+\* ------------------------------------------------------------ */
+.shell {
+  margin: auto;
+  max-width: 1230px;
+  padding: 0 15px;
+}
+
+.shell-xl {
+  margin: auto;
+  max-width: 1530px;
+  padding: 0 15px;
+}
+
+/* ------------------------------------------------------------ *	Header
+\* ------------------------------------------------------------ */
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  color: #fff;
+  padding: 36px 0;
+}
+
+.header .header__inner {
+  float: right;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logo {
+  float: left;
+}
+
+.header a {
+  color: inherit;
+}
+
+/* ------------------------------------------------------------ *	Footer
+\* ------------------------------------------------------------ */
+.footer {
+  color: #fff;
+  background: #404040;
+  padding: 45px 0;
+  font-size: 14px;
+}
+
+.footer a {
+  color: inherit;
+}
+
+.footer a:hover {
+  color: #e7434e;
+}
+
+.footer h6 {
+  margin-bottom: 20px;
+}
+
+.footer .footer__nav li {
+  margin-bottom: 11px;
+}
+
+.footer .field {
+  width: 230px;
+}
+
+.footer .form {
+  margin-bottom: 30px;
+}
+
+.footer .socials a:hover {
+  color: #fff;
+}
+
+/* ------------------------------------------------------------ *	Buttons
+\* ------------------------------------------------------------ */
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  height: 60px;
+  line-height: 60px;
+  min-width: 200px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  background: #e7434e;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  transition: ease-in-out .3s;
+  color: #fff;
+  text-align: center;
+  outline: 0;
+}
+
+.btn:hover {
+  color: #fff;
+  background: rgba(231, 67, 78, 0.7);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn_bordered {
+  border-radius: 0 5px 5px 0;
+}
+
+.btn_transparent {
+  background-color: transparent;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0 10px;
+  min-width: 143px;
+}
+
+.btn_transparent:hover {
+  border-color: transparent;
+  background: #e7434e;
+}
+
+.btn_medium {
+  height: 42px;
+  line-height: 42px;
+  min-width: 142px;
+}
+
+.btn_count {
+  min-width: 82px;
+  padding: 0 10px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: none;
+}
+
+.btn_count:hover {
+  background: rgba(231, 67, 78, 0.9);
+  color: #fff;
+}
+
+.btn_large {
+  max-width: 310px;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 32px;
+}
+
+.btn_large:hover {
+  color: #fff;
+}
+
+.btn_dark {
+  border-color: #bdbdbd;
+  color: #343434;
+}
+
+/* ------------------------------------------------------------ *	Section
+\* ------------------------------------------------------------ */
+.section {
+  padding: 20px 0 80px;
+}
+
+.section .facts {
+  margin-top: -70px;
+  z-index: 3;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.section .section__head {
+  padding: 72px 0;
+  text-align: center;
+}
+
+.section .section__head p {
+  color: #717171;
+  letter-spacing: 0.02em;
+}
+
+.section .section__body {
+  padding: 0 15px 80px;
+  text-align: center;
+}
+
+.section .section__actions {
+  text-align: center;
+}
+
+.section_background {
+  height: 600px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0;
+}
+
+.section_background h1 {
+  margin-bottom: 15px;
+}
+
+.section_background h2 {
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+/* ------------------------------------------------------------ *	Intro
+\* ------------------------------------------------------------ */
+.intro {
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.intro:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: .1;
+}
+
+.intro h1 {
+  margin-bottom: 10px;
+}
+
+.intro h2 {
+  color: inherit;
+}
+
+.intro .intro__actions {
+  margin: 0 -14px;
+}
+
+.intro .intro__image {
+  position: absolute;
+  width: 100%;
+  height: 850px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.intro .intro__body {
+  position: relative;
+  height: 850px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.intro .intro__content {
+  margin-bottom: 80px;
+}
+
+/* ------------------------------------------------------------ *	Navigations
+\* ------------------------------------------------------------ */
+.nav {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.nav ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav li {
+  margin-right: 30px;
+}
+
+.nav a:hover {
+  color: #e7434e;
+}
+
+/* ------------------------------------------------------------ *	Form
+\* ------------------------------------------------------------ */
+.form .form__inner {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form .btn {
+  font-size: 14px;
+}
+
+.form_intro .form__row {
+  width: 570px;
+}
+
+/* ------------------------------------------------------------ *	Form elements
+\* ------------------------------------------------------------ */
+.field {
+  height: 42px;
+  line-height: 42px;
+  padding: 0 10px;
+  background: #fff;
+  border-radius: 5px 0 0 5px;
+  color: #717171;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+.field_large {
+  height: 60px;
+  padding: 0 30px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------ *	Fact
+\* ------------------------------------------------------------ */
+.facts {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  height: 141px;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  box-shadow: 0 1px 7px rgba(113, 113, 113, 0.2);
+  background: #fff;
+  border-radius: 5px;
+}
+
+.facts .fact {
+  -webkit-flex: 1 1 25%;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+}
+
+.fact {
+  text-align: center;
+  font-size: 18px;
+  border-right: 1px solid #d4d4d4;
+  color: #717171;
+}
+
+.fact strong {
+  color: #343434;
+  display: block;
+  font-size: 30px;
+}
+
+.fact:last-child {
+  border: 0;
+}
+
+/* ------------------------------------------------------------ *	Feature
+\* ------------------------------------------------------------ */
+.features {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.features .feature {
+  -webkit-flex: 0 1 33.33%;
+      -ms-flex: 0 1 33.33%;
+          flex: 0 1 33.33%;
+  margin-bottom: 30px;
+}
+
+.features .feature_large {
+  -webkit-flex: 1 1 63%;
+      -ms-flex: 1 1 63%;
+          flex: 1 1 63%;
+}
+
+.feature {
+  position: relative;
+  transition: ease-in-out .3s;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.feature h2 {
+  color: inherit;
+  text-transform: none;
+  margin-bottom: 0;
+}
+
+.feature .feature__content {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: #fff;
+}
+
+.feature .btn_count {
+  position: absolute;
+  top: 30px;
+  left: 15px;
+}
+
+.feature a {
+  color: #fff;
+}
+
+.feature a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.feature .feature__inner {
+  position: relative;
+  transition: ease-in-out .3s;
+}
+
+.feature .feature__inner:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------------------------------------------ *	Socials
+\* ------------------------------------------------------------ */
+.socials ul {
+  font-size: 0;
+}
+
+.socials li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.socials a {
+  font-size: 18px;
+  text-align: center;
+  display: inline-block;
+  background: #717171;
+  height: 44px;
+  width: 44px;
+  line-height: 44px;
+  border-radius: 50%;
+}
+
+.socials a:hover {
+  background: #e7434e;
+}
+
+/*# sourceMappingURL=.maps/style.css.map */

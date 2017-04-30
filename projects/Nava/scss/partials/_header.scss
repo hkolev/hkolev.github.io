@@ -1,0 +1,25 @@
+/* ------------------------------------------------------------ *\
+	Header
+\* ------------------------------------------------------------ */
+
+.header {
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	color: $white;
+	padding: 36px 0;
+
+	& .header__inner {
+		float: right;
+		display: flex;
+		align-items: center;
+	}
+
+	& .logo {
+		float: left;
+	}
+
+	& a {
+		color: inherit;
+	}
+}

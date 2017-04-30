@@ -1,0 +1,25 @@
+/* ------------------------------------------------------------ *\
+	Form elements
+\* ------------------------------------------------------------ */
+
+.field {
+	height: 42px;
+	line-height: 42px;
+	padding: 0 10px;
+	background: $white;
+	border-radius: 5px 0 0 5px;
+	color: #717171;
+	font-size: 14px;
+	letter-spacing: 0.04em;
+	width: 100%;
+	outline: 0;
+	border: 0;
+	box-sizing: inherit;
+}
+
+.field_large { 
+	height: 60px;
+	padding: 0 30px;
+	line-height: 60px;
+	text-transform: uppercase;
+}

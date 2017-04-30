@@ -1,0 +1,58 @@
+/* ------------------------------------------------------------ *\
+	Feature
+\* ------------------------------------------------------------ */
+
+.features {
+	display: flex;
+	flex-wrap: wrap;
+	& .feature { 
+		flex: 0 1 33.33%;
+		margin-bottom: 30px;
+	}
+
+	& .feature_large {
+		flex: 1 1 63%;
+	}
+ }
+
+.feature{ 
+	position: relative;
+	transition: ease-in-out .3s;
+	padding: 0 15px;
+	margin-bottom: 30px;
+	text-align: left;
+	& h2 {
+		color: inherit;
+		text-transform: none;
+		margin-bottom: 0;
+	}
+
+	.feature__content {
+		position: absolute;
+		bottom: 30px;
+		left: 30px;
+		color: $white;
+	}
+
+	.btn_count {
+		position: absolute;
+		top: 30px;
+		left: 15px;
+	}
+
+	& a {
+		color: $white;
+		&:hover {
+			color: rgba($white, .8);
+		}
+	}
+
+	& .feature__inner {
+		position: relative;
+		transition: ease-in-out .3s;
+
+		&:hover {
+			box-shadow: 0 1px 5px rgba($black, .2);
+		}
+	}
+}

@@ -1,0 +1,28 @@
+/* ------------------------------------------------------------ *\
+    Variables
+\* ------------------------------------------------------------ */
+
+/*  Colors  */
+$white: #fff;
+$black: #000;
+$red: #e7434e;
+$dark: #343434;
+$gray: #717171;
+
+/*  Base body  */
+$font-family: 'Raleway', sans-serif;
+$font-family-2: 'Open Sans', sans-serif;
+
+$font-weight: 400;
+$font-size: 16px;
+$color: $black;
+$line-height: 1.4;
+
+/*  Links  */
+$color-link: $red;
+$color-link-hover: rgba($red, 0.7);
+
+/*  Shell  */
+$shell: 1230px;
+$shell-xl: 1530px;
+$shell-padding: 0 15px;

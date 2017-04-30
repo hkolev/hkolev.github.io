@@ -1,0 +1,21 @@
+/* ------------------------------------------------------------ *\
+	Form
+\* ------------------------------------------------------------ */
+
+.form {
+	& .form__inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	& .btn {
+		font-size: 14px;
+	}
+}
+
+.form_intro {
+	& .form__row {
+		width: 570px;
+	}
+}

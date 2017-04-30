@@ -1,0 +1,80 @@
+/* ------------------------------------------------------------ *\
+	Buttons
+\* ------------------------------------------------------------ */
+
+.btn { 
+	display: inline-block;
+	vertical-align: middle;
+	height: 60px;
+	line-height: 60px;
+	min-width: 200px;
+	padding: 0 15px;
+	text-transform: uppercase;
+	background: $red;
+	font-family: $font-family;
+	font-weight: bold;
+	transition: ease-in-out .3s;
+	color: $white;
+	text-align: center;
+	outline: 0;
+
+	&:hover {
+		color: $white;
+		background: rgba($red, .7);
+		box-shadow: 1px 1px 5px rgba($black, 0.2);
+	}
+}
+
+.btn_bordered {
+	border-radius: 0 5px 5px 0;
+}
+
+.btn_transparent {
+	background-color: transparent;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid $white;
+	border-radius: 5px;
+	padding: 0 10px;
+	min-width: 143px;
+
+	&:hover {
+		border-color: transparent;
+		background: $red;
+	}
+}
+
+.btn_medium {
+	height: 42px;
+	line-height: 42px;
+	min-width: 142px;
+}
+
+.btn_count {
+	min-width: 82px;
+	padding: 0 10px;
+	height: 42px;
+	line-height: 42px;
+	border-radius: 5px;
+	font-family: $font-family-2;
+	text-transform: none;
+	&:hover {
+		background: rgba($red, .9);
+		color: $white;
+	}
+}
+
+.btn_large {
+	max-width: 310px;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 32px;
+	&:hover {
+		color: $white;
+	}
+}
+
+.btn_dark {
+	border-color: #bdbdbd;
+	color: $dark;
+}

@@ -1,0 +1,50 @@
+/* ------------------------------------------------------------ *\
+	Intro
+\* ------------------------------------------------------------ */
+
+.intro {
+	position: relative;
+	color: $white;
+	text-align: center;
+	&:after{
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: $black;
+		opacity: .1;
+	}
+	& h1 {
+		margin-bottom: 10px;
+	}
+
+	& h2 {
+		color: inherit;
+	}
+
+	& .intro__actions {
+		margin: 0 -14px;
+	}
+
+	& .intro__image {
+		position: absolute;
+		width: 100%;
+		height: 850px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	& .intro__body {
+		position: relative;
+		height: 850px;
+		display: flex;
+		align-items: center;
+		z-index: 1;
+	}
+
+	& .intro__content {
+		margin-bottom: 80px;
+	}
+}
